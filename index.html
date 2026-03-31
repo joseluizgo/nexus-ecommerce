@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus Gaming</title>
+    <script src="https://kit.fontawesome.com/6db746f974.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
+
 <body>
 
     <header>
-        <div class="header-logo"><img src="#" alt="Logo"></div>
+        <div class="header-logo">NEXUS<br>GAMING</div>
         <nav>
-            <ul>
+            <ul class="menu" id="menu">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#product">PRODUCTS</a></li>
                 <li><a href="#category">CATEGORY</a></li>
@@ -19,8 +22,18 @@
                 <li><a href="#feedback">FEEDBACK</a></li>
             </ul>
         </nav>
-        <div class="header-cart" id="icon-card">#ICON#</div>
-        <div class="header-account" id="icon-account">#ICON#</div>
+
+        <div class="icons-container">
+            <div class="icon" id="icon-cart">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+            <div class="icon" id="icon-account">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <button id="hamburger">
+                ☰
+            </button>
+        </div>
     </header>
 
     <main>
@@ -28,7 +41,7 @@
         <section id="home">
             <h1>DOMINATE<br>THE GAME</h1>
             <p>PREMIUM PERIPHERALS FOR ELITE PERFORMANCE</p>
-            <button>SHOP NOW</button>
+            <button class="btn-header">SHOP NOW</button>
         </section>
 
         <section id="product">
@@ -134,7 +147,7 @@
 
         <section id="feedback">
             <h2>FEEDBACKS</h2>
-            
+
             <div class="container-cards-feedback">
 
                 <div class="card-feedback">
@@ -143,7 +156,7 @@
                     <p class="comment">"Incredible performance!"</p>
                     <p class="comment-name">-Alex B.</p>
                 </div>
-                
+
                 <div class="card-feedback">
                     <img src="#foto" alt="Foto">
                     <div class="card-stars">#ICON#</div>
@@ -167,7 +180,7 @@
 
             <form action="#">
                 <input type="email" name="email-community" id="email-community">
-                
+
                 <button class="btn-add" id="btn-subscribe">SUBSCRIBE</button>
             </form>
 
@@ -202,11 +215,12 @@
         <hr>
 
         <div class="end">
-                <p>&copy;2026 - Nexus gaming, ofc</p>
-                <p>desing</p>
+            <p>&copy;2026 - Nexus gaming, ofc</p>
+            <p>desing</p>
         </div>
     </footer>
 
     <script src="src/js/script.js"></script>
 </body>
+
 </html>
