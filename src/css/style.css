@@ -2,12 +2,12 @@
 
 :root {
     /*FUNDO*/
-    --background-principal: #22252c;
-    --background-card: #2b303d;
+    --background-principal: #2c3038;
+    --background-card: #353a49;
     --background-variacao: #32394b;
 
     /*PRINCIPAL*/
-    --principal-principal-botao: #00E5FF;
+    --principal-principal-botao: #00e5ff;
     --principal-ciano-medio: #00B8D9;
     --principal-teal-neon: #0ABDC6;
 
@@ -111,4 +111,71 @@ button.btn-header {
 
 button.btn-header:hover {
     cursor: pointer;
+}
+
+main section#product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-principal);
+    color: var(--branco-titulos);
+}
+
+main section#product h2 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+div.container-cards-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    font-size: 0.9em;
+    gap: 10px;
+
+    h3 {
+        font-size: 1em;
+    }
+
+    p.price {
+        font-size: 1.5em;
+        color: var(--principal-teal-neon);
+        text-shadow: 0px 0px 5px var(--principal-teal-neon);
+    }
+}
+
+div.card-products {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    min-width: 160px;
+    min-height: 270px;
+    background-color: var(--background-card);
+    padding: 10px;
+    border-radius: 8px;
+
+    img {
+        width: 160px;
+        border-radius: 8px 8px 0px 0px;
+        margin: -10px;
+    }
+
+    button.btn-add {
+        padding: 10px;
+        border: 2px solid var(--principal-principal-botao);
+        border-radius: 25px;
+        background-color: transparent;
+        color: var(--principal-principal-botao);
+        font-weight: bold;
+        box-shadow: 0px 0px 8px var(--principal-principal-botao);
+        text-shadow: 0px 0px 8px var(--principal-principal-botao);
+    }
+
+    button.btn-add:hover {
+        cursor: pointer;
+    }
 }
