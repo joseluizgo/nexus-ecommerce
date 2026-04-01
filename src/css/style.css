@@ -171,6 +171,7 @@ div.card-products {
     background-color: var(--background-card);
     padding: 10px;
     border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.438);
 
     button.btn-add {
         padding: 10px;
@@ -228,6 +229,7 @@ div.card-category {
     background-color: var(--background-card);
     padding: 10px;
     border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.438);
 
     img {
         border: 1px solid rgb(59, 59, 59);
@@ -239,5 +241,23 @@ div.card-category {
 }
 
 section#coupon {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div.coupon-banner {
+        border-radius: 10px;
+
+        background: url(../images/background-coupon.jpeg) padding-box,
+                    linear-gradient(to right, #00e5ff, #A855F7, #EA00D9) border-box;
+        border: 1px solid transparent;
+        box-shadow: 0px 0px 10px #00e5ff5b;
+
+        background-size: 100%;
+        background-position: center center;
+
+        min-width: 345px;
+        max-width: 70%;
+        height: 100px;
+    }
 }
