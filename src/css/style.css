@@ -21,7 +21,7 @@ header {
     background-color: var(--background-principal);
     color: var(--branco-titulos);
 
-    padding: 10px;
+    padding: 10px 20px;
 
     position: fixed;
     width: 100%;
@@ -31,14 +31,17 @@ header {
     
 }
 
-div.header-logo {
-    color: var(--principal-principal-botao);
-    text-shadow: 0px 0px 15px var(--principal-teal-neon);
-
-    font-weight: bolder;
-    text-align: center;
-    line-height: 0.8em;
+div.header-logo h2 {
     font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+span {
+    color: #00e5ff;
+    text-shadow: 0 0 8px #00e5ff;
 }
 
 div.icons-container {
