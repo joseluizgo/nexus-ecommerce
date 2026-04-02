@@ -355,12 +355,13 @@ section#feedback {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        gap: 20px;
 
         background-image: linear-gradient(to right,#4d5158 10%,#242730);
         padding: 40px;
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.301);
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.123);
 
         img {
             width: 60px;
