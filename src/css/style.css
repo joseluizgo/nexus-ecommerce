@@ -1,30 +1,5 @@
 @charset "UTF-8";
-
-:root {
-    /*FUNDO*/
-    --background-principal: #23272e;
-    --background-card: #2e323f;
-    --background-variacao: #22252c;
-
-    /*PRINCIPAL*/
-    --principal-principal-botao: #00e5ff;
-    --principal-ciano-medio: #00B8D9;
-    --principal-teal-neon: #0ABDC6;
-
-    /*SEGUNDARIA*/
-    --segundaria-roxo-vibrante: #A855F7;
-    --segundaria-magenta-neon: #EA00D9;
-    --segundaria-roxo-mais-escuro: #C026D3;
-
-    /*DETALHES*/
-    --verde-neon: #00FF9F;
-    --verde-mais-forte: #39FF14;
-
-    /*TEXTO*/
-    --branco-titulos: #FFFFFF;
-    --cinza-claro-descricao: #A1A1AA;
-    --cinza-medio: #6B7280;
-}
+@import url(paleta.css);
 
 * {
     padding: 0;
@@ -40,13 +15,20 @@ body, html {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     background-color: var(--background-principal);
     color: var(--branco-titulos);
 
     padding: 10px;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    
 }
 
 div.header-logo {
@@ -90,6 +72,10 @@ main {
         margin: -10px;
     }
 
+    h2 {
+        margin-bottom: 10px;
+    }
+
     button.btn-add {
         padding: 10px;
         border-radius: 25px;
@@ -109,6 +95,7 @@ main {
 }
 
 main section#home { 
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +150,7 @@ div.container-cards-products {
     flex-wrap: wrap;
     margin: 10px;
     font-size: 0.9em;
-    gap: 10px;
+    gap: 15px;
 
     h3 {
         font-size: 1em;
@@ -193,30 +180,23 @@ div.card-products {
 
 main section#category {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--background-variacao);
     color: var(--branco-titulos);
-    padding: 20px 0px;
-}
-
-main section#category h2 {
-    font-size: 1.2em;
+    padding: 40px 0px;
+    font-size: 1.1em;
+    gap: 20px;
 }
 
 div.container-cards-category {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 10px;
     font-size: 0.9em;
-    gap: 10px;
-
-    h3 {
-        font-size: 1em;
-    }
+    gap: 20px;
 }
 
 div.card-category {
@@ -230,7 +210,7 @@ div.card-category {
     background-color: var(--background-card);
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.438);
+    box-shadow: 0px 0px 10px rgba(2, 74, 116, 0.589);
 
     img {
         border: 1px solid rgb(59, 59, 59);
@@ -257,7 +237,7 @@ section#coupon {
         background-size: cover;
         background-position: center center;
 
-        min-width: 350px;
+        min-width: 330px;
         max-width: 800px;
         min-height: 7em;
         max-height: 12em;
@@ -372,15 +352,15 @@ section#community {
     padding: 20px 0px;
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     input {
-        padding: 10px;
+        padding: 15px;
         border-radius: 20px;
         border: none;
 

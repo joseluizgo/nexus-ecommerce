@@ -1,0 +1,25 @@
+:root {
+    /*FUNDO*/
+    --background-principal: #23272e;
+    --background-card: #2e323f;
+    --background-variacao: #22252c;
+
+    /*PRINCIPAL*/
+    --principal-principal-botao: #00e5ff;
+    --principal-ciano-medio: #00B8D9;
+    --principal-teal-neon: #0ABDC6;
+
+    /*SEGUNDARIA*/
+    --segundaria-roxo-vibrante: #A855F7;
+    --segundaria-magenta-neon: #EA00D9;
+    --segundaria-roxo-mais-escuro: #C026D3;
+
+    /*DETALHES*/
+    --verde-neon: #00FF9F;
+    --verde-mais-forte: #39FF14;
+
+    /*TEXTO*/
+    --branco-titulos: #FFFFFF;
+    --cinza-claro-descricao: #A1A1AA;
+    --cinza-medio: #6B7280;
+}
