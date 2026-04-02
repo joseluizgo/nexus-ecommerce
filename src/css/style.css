@@ -75,7 +75,7 @@ button#hamburger {
     font-size: 1.2em;
 }
 
-ul {
+ul#menu{
     display: none;
 }
 
@@ -369,7 +369,6 @@ section#community {
     gap: 10px;
 
     color: white;
-    background-color: var(--background-variacao);
     padding: 20px 0px;
 
     h2 {
@@ -388,4 +387,52 @@ section#community {
         background-color: var(--background-card);
         color: white;
     }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+    background-color: rgb(20, 20, 20);
+
+    a {
+        font-weight: normal;
+        color: rgb(214, 214, 214);
+        text-decoration: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    ul.footer-media {
+        display: flex;
+        gap: 10px;
+
+        ul.footer-media-icon {
+            display: flex;
+            flex-direction: row;
+            font-size: 2em;
+        }
+    }
+}
+
+div.end {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    font-size: 0.8em;
 }
