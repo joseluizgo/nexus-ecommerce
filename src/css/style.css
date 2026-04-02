@@ -4,7 +4,7 @@
     /*FUNDO*/
     --background-principal: #23272e;
     --background-card: #2e323f;
-    --background-variacao: #32394b;
+    --background-variacao: #20232b;
 
     /*PRINCIPAL*/
     --principal-principal-botao: #00e5ff;
@@ -146,10 +146,11 @@ div.container-cards-products {
     flex-wrap: wrap;
     margin: 10px;
     font-size: 0.9em;
-    gap: 20px;
+    gap: 10px;
 
     h3 {
         font-size: 1em;
+        margin-top: 10px;
     }
 
     p.price {
@@ -163,7 +164,6 @@ div.card-products {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 15px;
 
     min-width: 160px;
     max-width: 300px;
@@ -196,8 +196,9 @@ main section#category {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--background-principal);
+    background-color: var(--background-variacao);
     color: var(--branco-titulos);
+    padding: 20px 0px;
 }
 
 main section#category h2 {
@@ -211,7 +212,7 @@ div.container-cards-category {
     flex-wrap: wrap;
     margin: 10px;
     font-size: 0.9em;
-    gap: 20px;
+    gap: 10px;
 
     h3 {
         font-size: 1em;
@@ -248,16 +249,122 @@ section#coupon {
     div.coupon-banner {
         border-radius: 10px;
 
-        background: url(../images/background-coupon.jpeg) padding-box,
+        background: url(../images/background-coupon.jpg) padding-box,
                     linear-gradient(to right, #00e5ff, #A855F7, #EA00D9) border-box;
         border: 1px solid transparent;
-        box-shadow: 0px 0px 10px #00e5ff5b;
+        box-shadow: 0px 0px 10px #ae00ff5b;
 
-        background-size: 100%;
+        background-size: cover;
         background-position: center center;
 
-        min-width: 345px;
-        max-width: 70%;
-        height: 100px;
+        min-width: 350px;
+        max-width: 800px;
+        min-height: 7em;
+        max-height: 12em;
+    }
+
+    div.coupon-banner:hover {
+        cursor: pointer;
+    }
+}
+
+section#best {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-variacao);
+    color: var(--branco-titulos);
+    padding: 20px 0px;
+
+    div.container-cards-best {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px;
+        font-size: 0.9em;
+        gap: 10px;
+
+        h3 {
+            font-size: 1em;
+        }
+
+        p.price {
+            font-size: 1.5em;
+            color: var(--principal-teal-neon);
+            text-shadow: 0px 0px 5px var(--principal-teal-neon);
+        }
+    }
+
+    div.card-best {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 15px;
+
+        min-width: 160px;
+        max-width: 300px;
+        min-height: 270px;
+        background-color: var(--background-card);
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.438);
+
+        button.btn-add {
+            padding: 10px;
+            border-radius: 25px;
+            background: linear-gradient(var(--background-card), var(--background-card)) padding-box,
+                        linear-gradient(to right, #00e5ff, #A855F7, #EA00D9) border-box;
+            border: 1px solid transparent;
+        
+            color: var(--principal-principal-botao);
+            font-weight: bold;
+            box-shadow: 0px 0px 10px rgba(1, 247, 255, 0.281);
+            text-shadow: 0px 0px 10px rgba(2, 255, 234, 0.863);
+        }
+
+        button.btn-add:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+section#feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+    color: white;
+
+    div.container-cards-feedback {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--background-principal);
+    }
+
+    div.card-feedback {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        background-image: linear-gradient(to right,#4d5158 10%,#242730);
+        padding: 40px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.301);
+
+        img {
+            width: 60px;
+            border-radius: 50%;
+        }
     }
 }
