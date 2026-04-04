@@ -17,11 +17,11 @@ header {
         a {
             text-decoration: none;
             color: white;
+            transition: color 0.5s;
         }
 
         a:hover {
             color: var(--principal-principal-botao);
-            text-decoration: underline;
         }
     }
 
