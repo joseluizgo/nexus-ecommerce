@@ -355,6 +355,13 @@ section#feedback {
             color: rgb(255, 238, 0);
             text-shadow: 0px 0px 5px rgba(255, 238, 0, 0.534);
         }
+
+        transition: 1s;
+    }
+
+    div.card-feedback:hover {
+        cursor: pointer;
+        scale: calc(1.05);
     }
 }
 
