@@ -60,8 +60,21 @@ button#hamburger {
     font-size: 1.2em;
 }
 
-ul#menu{
+.some {
     display: none;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    a{
+        color: white;
+        text-decoration: none;
+    }
 }
 
 main {
