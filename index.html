@@ -1,238 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Gaming</title>
-
+    <meta name="description" content="Periféricos premium para gamers de elite. Domine o jogo com Nexus Gaming.">
+    <title>Nexus Gaming • Domine o Jogo</title>
     <script src="https://kit.fontawesome.com/6db746f974.js" crossorigin="anonymous"></script>
-
     <link rel="shortcut icon" href="src/images/icon-logo.avif" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/media-query.css" media="screen and (min-width: 768px)">
-
 </head>
-
 <body>
 
     <header>
-        <div class="header-logo"><h2>NEXUS<br><span>GAMING</span></h2></div>
+        <div class="header-logo">
+            <h2>NEXUS<br><span>GAMING</span></h2>
+        </div>
+
         <nav>
-            <ul id="menu">
+            <ul id="menu" class="menu">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#product">PRODUCTS</a></li>
                 <li><a href="#category">CATEGORY</a></li>
-                <li><a href="#best">BEST</a></li>
+                <li><a href="#best">BEST SELLERS</a></li>
                 <li><a href="#feedback">FEEDBACK</a></li>
             </ul>
         </nav>
 
         <div class="icons-container">
             <div class="icon" id="icon-cart">
-                <i class="fa-solid fa-cart-arrow-down"></i>
+                <a href="src/html/cart-page.html" aria-label="Carrinho">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
             </div>
-            <div class="icon" id="icon-account">
-                <a href="src/html/account.html"><i class="fa-regular fa-user"></i></a>
-            </div>
-            <button id="hamburger">
-                ☰
-            </button>
+            <button id="hamburger" aria-label="Menu mobile">☰</button>
         </div>
     </header>
 
     <main>
-
         <section id="home">
             <h1>DOMINATE<br>THE GAME</h1>
-            <p>PREMIUM PERIPHERALS FOR ELITE PERFORMANCE</p>
+            <p>PERIPHERALS PREMIUM PARA PERFORMANCE ELITE</p>
             <button class="btn-header">SHOP NOW</button>
         </section>
 
         <section id="product">
             <h2>FEATURED PRODUCTS</h2>
-
             <div class="container-cards-products">
-
                 <div class="card-products">
-                    <img src="src/images/teclado-k7.jpeg" alt="Keyboard">
+                    <img src="src/images/teclado-k7.jpeg" alt="Teclado Nexus K7">
                     <h3>Nexus K7 Keyboard</h3>
                     <p class="price">$149</p>
                     <button class="btn-add">ADD TO CART</button>
                 </div>
                 <div class="card-products">
-                    <img src="src/images/mouse-c9.jpeg" alt="Mouse">
+                    <img src="src/images/mouse-c9.jpeg" alt="Mouse Nexus C9">
                     <h3>Nexus C9 Mouse</h3>
                     <p class="price">$79</p>
                     <button class="btn-add">ADD TO CART</button>
                 </div>
                 <div class="card-products">
-                    <img src="src/images/headset-hs.jpeg" alt="Headset">
+                    <img src="src/images/headset-hs.jpeg" alt="Headset Nova HS">
                     <h3>Nova HS Headset</h3>
                     <p class="price">$129</p>
                     <button class="btn-add">ADD TO CART</button>
                 </div>
                 <div class="card-products">
-                    <img src="src/images/mousepad-mp1.jpg" alt="Mousepad">
+                    <img src="src/images/mousepad-mp1.jpg" alt="Mousepad Titan M1">
                     <h3>Titan M1 Mousepad</h3>
                     <p class="price">$49</p>
                     <button class="btn-add">ADD TO CART</button>
                 </div>
-
             </div>
         </section>
 
         <section id="category">
             <h2>SHOP BY CATEGORY</h2>
-
             <div class="container-cards-category">
-
-                <div class="card-category">
-                    <img src="src/images/teclado-category.png" alt="Keyboard">
-                </div>
-                <div class="card-category">
-                    <img src="src/images/mouse-category.jpg" alt="Mice">
-                </div>
-                <div class="card-category">
-                    <img src="src/images/headset-category.jpg" alt="Headset">
-                </div>
-                <div class="card-category">
-                    <img src="src/images/mousepad-category.jpeg" alt="Mousepad">
-                </div>
-
+                <div class="card-category"><img src="src/images/teclado-category.png" alt="Teclados"></div>
+                <div class="card-category"><img src="src/images/mouse-category.jpg" alt="Mouses"></div>
+                <div class="card-category"><img src="src/images/headset-category.jpg" alt="Headsets"></div>
+                <div class="card-category"><img src="src/images/mousepad-category.jpeg" alt="Mousepads"></div>
             </div>
         </section>
 
         <section id="coupon">
             <div class="coupon-banner">
-                
+                <div class="coupon-content">
+                    <h3>20% OFF NA PRIMEIRA COMPRA</h3>
+                    <p>USE O CÓDIGO: <strong>NEXUS20</strong></p>
+                    <button class="btn-coupon">PEGAR DESCONTO</button>
+                </div>
             </div>
         </section>
 
         <section id="best">
             <h2>BEST SELLERS</h2>
             <div class="container-cards-best">
-
                 <div class="card-best">
-                    <img src="src/images/apor-k8-keyboard.jpg" alt="Keyboard">
+                    <img src="src/images/apor-k8-keyboard.jpg" alt="Apor K8">
                     <h3>Apor K8 Keyboard</h3>
                     <p class="price">$210</p>
-                    <button class="btn-add">ADD</button>
+                    <button class="btn-add">ADD TO CART</button>
                 </div>
-
                 <div class="card-best">
-                    <img src="src/images/venom-ms-mouse.jpg" alt="Mouse">
+                    <img src="src/images/venom-ms-mouse.jpg" alt="Venom MS">
                     <h3>Venom MS Mouse</h3>
                     <p class="price">$119</p>
-                    <button class="btn-add">ADD</button>
+                    <button class="btn-add">ADD TO CART</button>
                 </div>
-
                 <div class="card-best">
-                    <img src="src/images/echo-pro-headset.jpg" alt="Headset">
+                    <img src="src/images/echo-pro-headset.jpg" alt="Echo Pro">
                     <h3>Echo Pro Headset</h3>
                     <p class="price">$190</p>
-                    <button class="btn-add">ADD</button>
+                    <button class="btn-add">ADD TO CART</button>
                 </div>
-
                 <div class="card-best">
-                    <img src="src/images/orok-p0-mousepad.jpg" alt="Mousepad">
+                    <img src="src/images/orok-p0-mousepad.jpg" alt="Orok P0">
                     <h3>Orok P0 Mousepad</h3>
                     <p class="price">$95</p>
-                    <button class="btn-add">ADD</button>
+                    <button class="btn-add">ADD TO CART</button>
                 </div>
-
             </div>
         </section>
 
         <section id="feedback">
             <h2>FEEDBACKS</h2>
-
             <div class="container-cards-feedback">
-
                 <div class="card-feedback">
-                    <img src="src/images/pessoa01.png" alt="Foto">
-                    <div class="card-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+                    <img src="src/images/pessoa01.png" alt="Alex B.">
+                    <div class="card-stars">★★★★</div>
                     <p class="comment">"Incredible performance!"</p>
-                    <p class="comment-name">-Alex B.</p>
+                    <p class="comment-name">- Alex B.</p>
                 </div>
-
                 <div class="card-feedback">
-                    <img src="src/images/pessoa02.png" alt="Foto">
-                    <div class="card-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+                    <img src="src/images/pessoa02.png" alt="Carlos R.">
+                    <div class="card-stars">★★★★</div>
                     <p class="comment">"Incredible performance!"</p>
-                    <p class="comment-name">-Carlos R.</p>
+                    <p class="comment-name">- Carlos R.</p>
                 </div>
-
                 <div class="card-feedback">
-                    <img src="src/images/pessoa04.png" alt="Foto">
-                    <div class="card-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+                    <img src="src/images/pessoa04.png" alt="Robert H.">
+                    <div class="card-stars">★★★★</div>
                     <p class="comment">"Incredible performance!"</p>
-                    <p class="comment-name">-Robert H.</p>
+                    <p class="comment-name">- Robert H.</p>
                 </div>
-
             </div>
         </section>
 
         <section id="community">
             <h2>JOIN THE NEXUS COMMUNITY</h2>
-            <p class="community">GET EXCLUSIVE DEALS & UPDATES</p>
-
-            <form action="#">
-                <input type="email" name="email-community" id="email-community" placeholder="Email address">
-
-                <button class="btn-add" id="btn-subscribe">SUBSCRIBE</button>
+            <p class="community">GANHE DEALS EXCLUSIVOS E ATUALIZAÇÕES</p>
+            <form id="subscribe-form">
+                <input type="email" id="email-community" placeholder="Seu email" required>
+                <button type="submit" class="btn-add">SUBSCRIBE</button>
             </form>
-
         </section>
-
     </main>
 
     <footer>
-
         <ul class="footer-suport">
             <li>SUPORT</li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-
         <ul class="footer-company">
             <li>COMPANY</li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Position</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-
         <ul class="footer-media">
             <li>SOCIAL MEDIA</li>
-            <ul class="footer-media-icon">
-                <li><a href="https://www.linkedin.com/in/joseluizgo/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/joseluizgo" target="_blank" rel="nofollow"><i class="fa-brands fa-square-github"></i></a></li>
-                <li><a href="https://www.instagram.com/joseluiz.dev/" target="_blank" rel="nofollow"><i class="fa-brands fa-square-instagram"></i></a></li>
-            </ul>
+            <div class="footer-media-icon">
+                <a href="https://www.linkedin.com/in/joseluizgo/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/joseluizgo" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.instagram.com/joseluiz.dev/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
         </ul>
     </footer>
 
     <div class="end">
-        <p>&copy;2026 - Nexus gaming, ofc</p>
-        <p>desing</p>
+        <p>&copy; 2026 - Nexus Gaming. Todos os direitos reservados.</p>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-check-circle"></i>
+        <span id="toast-message"></span>
     </div>
 
     <script src="src/js/script.js"></script>
 </body>
-
 </html>

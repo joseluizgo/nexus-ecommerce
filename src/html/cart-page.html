@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Nexus Gaming</title>
+    <script src="https://kit.fontawesome.com/6db746f974.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/paleta.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="header-logo">
+            <h2>NEXUS<br><span>GAMING</span></h2>
+        </div>
+        <nav>
+            <ul id="menu-cart" class="menu">
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../../index.html#product">PRODUCTS</a></li>
+                <li><a href="../../index.html#category">CATEGORY</a></li>
+                <li><a href="../../index.html#best">BEST SELLERS</a></li>
+            </ul>
+        </nav>
+        <div class="icons-container">
+            <a href="../../index.html" aria-label="Voltar para home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <button id="hamburger-cart" aria-label="Menu mobile">☰</button>
+        </div>
+    </header>
+
+    <main class="cart-main">
+        <div class="cart-container">
+            <h2>SEU CARRINHO</h2>
+            <div id="cart-items"></div>
+
+            <div class="cart-summary">
+                <div class="total-container">
+                    <span>Total:</span>
+                    <span id="total-price"></span>
+                </div>
+                <button onclick="finalizePurchase()" class="btn-add">FINALIZAR COMPRA</button>
+                <a href="../../index.html" class="continue-shopping">← Continuar comprando</a>
+            </div>
+        </div>
+    </main>
+
+
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-check-circle"></i>
+        <span id="toast-message"></span>
+    </div>
+
+    <script src="../js/cart.js"></script>
+</body>
+</html>
